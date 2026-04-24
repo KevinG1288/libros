@@ -4,7 +4,6 @@ function Usuario() {
   const [editando, setEditando] = useState(false)
   const [tempNombre, setTempNombre] = useState('')
   const [totalFavs, setTotalFavs] = useState(0)
-
   useEffect(() => {
     const savedName = localStorage.getItem('usuario_nombre') || ''
     setNombre(savedName)

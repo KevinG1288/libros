@@ -1,13 +1,11 @@
 import { useParams } from 'react-router-dom'
 import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
-
 interface Author {
   name: string
   birth_year: number | null
   death_year: number | null
 }
-
 interface Book {
   id: number
   title: string
@@ -63,7 +61,6 @@ function Detalle() {
 
   if (loading) return <p className="loading-text">Cargando libro...</p>
   if (!book) return <p className="loading-text">Libro no encontrado.</p>
-
   const leerUrl =
     book.formats['text/html'] ||
     book.formats['text/plain; charset=utf-8'] ||
@@ -116,12 +113,11 @@ function Detalle() {
             rel="noreferrer"
             className="read-btn"
           >
-            📖 Leer libro
+             Leer libro
           </a>
         )}
       </div>
     </div>
   )
 }
-
 export default Detalle
