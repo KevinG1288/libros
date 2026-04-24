@@ -18,7 +18,7 @@ interface Book {
 }
 
 function getCover(formats: Record<string, string>): string {
-  return formats['image/jpeg'] || 'https://via.placeholder.com/150x200?text=📖'
+  return formats['image/jpeg'] || 'https://via.placeholder.com/150x200?text='
 }
 
 function Detalle() {
