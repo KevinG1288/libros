@@ -40,7 +40,7 @@ function Original() {
 
   return (
     <div className="page-container">
-      <h2 className="page-title">🏆 Top 10 Más Descargados</h2>
+      <h2 className="page-title"> Top 10 Más Descargados</h2>
       <p className="page-sub">Los libros en español más populares de Project Gutenberg</p>
 
       {loading ? (
@@ -67,7 +67,7 @@ function Original() {
                       width: `${Math.min(100, (book.download_count / books[0].download_count) * 100)}%`
                     }}
                   />
-                  <span className="download-label">⬇️ {book.download_count.toLocaleString()}</span>
+                  <span className="download-label">⬇ {book.download_count.toLocaleString()}</span>
                 </div>
               </div>
             </Link>

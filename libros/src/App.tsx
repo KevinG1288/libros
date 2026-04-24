@@ -12,11 +12,11 @@ import "./App.css"
 function NavMenu() {
   const location = useLocation()
   const links = [
-    { to: "/", label: "Home", icon: "🏠" },
-    { to: "/favoritos", label: "Favorito", icon: "❤️" },
-    { to: "/original", label: "Original", icon: "✨" },
-    { to: "/informativa", label: "Info", icon: "ℹ️" },
-    { to: "/usuario", label: "Usuario", icon: "👤" },
+    { to: "/", label: "Home", icon: "" },
+    { to: "/favoritos", label: "Favorito", icon: "" },
+    { to: "/original", label: "Original", icon: "" },
+    { to: "/informativa", label: "Info", icon: "" },
+    { to: "/usuario", label: "Usuario", icon: "" },
   ]
   return (
     <nav className="c-menu">

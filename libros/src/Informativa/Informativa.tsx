@@ -1,7 +1,7 @@
 function Informativa() {
   return (
     <div className="page-container">
-      <h2 className="page-title">ℹ️ Acerca de la App</h2>
+      <h2 className="page-title"> Acerca de la App</h2>
 
       <div className="info-card">
         <div className="info-section">
@@ -14,9 +14,9 @@ function Informativa() {
         </div>
 
         <div className="info-section">
-          <h3>🔌 API utilizada</h3>
+          <h3> API utilizada</h3>
           <p><strong>Gutendex</strong> — JSON Web API para Project Gutenberg</p>
-          <p>🌐 <code>https://gutendex.com/books</code></p>
+          <p> <code>https://gutendex.com/books</code></p>
           <ul className="info-list">
             <li><code>?languages=es</code> — Libros en español</li>
             <li><code>?search=quijote</code> — Búsqueda por título o autor</li>
@@ -26,26 +26,26 @@ function Informativa() {
         </div>
 
         <div className="info-section">
-          <h3>✨ Funciones principales</h3>
+          <h3> Funciones principales</h3>
           <ul className="info-list">
-            <li>🔍 Buscar libros por título o autor</li>
-            <li>🏷️ Filtrar por categoría o tema</li>
-            <li>📖 Ver detalle completo del libro</li>
-            <li>❤️ Guardar libros en favoritos</li>
-            <li>🏆 Ver top 10 más descargados</li>
-            <li>🔗 Acceder al texto completo gratis</li>
+            <li> Buscar libros por título o autor</li>
+            <li> Filtrar por categoría o tema</li>
+            <li> Ver detalle completo del libro</li>
+            <li> Guardar libros en favoritos</li>
+            <li> Ver top 10 más descargados</li>
+            <li> Acceder al texto completo gratis</li>
           </ul>
         </div>
 
         <div className="info-section">
-          <h3>👤 Desarrollador</h3>
+          <h3> Desarrollador</h3>
           <p>Proyecto académico — React Native con TypeScript</p>
           <p>Materia: Desarrollo Móvil</p>
           <p>Fecha: Abril 2025</p>
         </div>
 
         <div className="info-badge">
-          <span>📖</span>
+          <span></span>
           <p>Más de <strong>60,000 libros</strong> disponibles gratuitamente</p>
         </div>
       </div>

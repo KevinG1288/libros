@@ -103,7 +103,7 @@ function Home() {
                 <p className="book-author">
                   {book.authors.map((a) => a.name).join(', ') || 'Autor desconocido'}
                 </p>
-                <p className="book-downloads">⬇️ {book.download_count.toLocaleString()} descargas</p>
+                <p className="book-downloads"> {book.download_count.toLocaleString()} descargas</p>
               </div>
             </Link>
           ))}

@@ -82,17 +82,17 @@ function Detalle() {
         <h2 className="detalle-title">{book.title}</h2>
 
         <p className="detalle-autor">
-          ✍️ {book.authors.map((a) => a.name).join(', ') || 'Autor desconocido'}
+           {book.authors.map((a) => a.name).join(', ') || 'Autor desconocido'}
         </p>
 
         {book.authors[0]?.birth_year && (
           <p className="detalle-meta">
-            📅 {book.authors[0].birth_year} — {book.authors[0].death_year ?? 'presente'}
+             {book.authors[0].birth_year} — {book.authors[0].death_year ?? 'presente'}
           </p>
         )}
 
-        <p className="detalle-meta">⬇️ {book.download_count.toLocaleString()} descargas</p>
-        <p className="detalle-meta">🌐 Idioma: {book.languages.join(', ')}</p>
+        <p className="detalle-meta"> {book.download_count.toLocaleString()} descargas</p>
+        <p className="detalle-meta"> Idioma: {book.languages.join(', ')}</p>
 
         {book.subjects.length > 0 && (
           <div className="detalle-tags">
@@ -106,7 +106,7 @@ function Detalle() {
           className={`fav-btn ${esFavorito ? 'fav-activo' : ''}`}
           onClick={toggleFavorito}
         >
-          {esFavorito ? '❤️ Quitar de favoritos' : '🤍 Agregar a favoritos'}
+          {esFavorito ? ' Quitar de favoritos' : ' Agregar a favoritos'}
         </button>
 
         {leerUrl && (

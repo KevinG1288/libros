@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react'
-
 function Usuario() {
   const [nombre, setNombre] = useState('')
   const [editando, setEditando] = useState(false)
@@ -10,20 +9,17 @@ function Usuario() {
     const savedName = localStorage.getItem('usuario_nombre') || ''
     setNombre(savedName)
     setTempNombre(savedName)
-
     const favs: number[] = JSON.parse(localStorage.getItem('favoritos') || '[]')
     setTotalFavs(favs.length)
   }, [])
-
   const guardar = () => {
     localStorage.setItem('usuario_nombre', tempNombre)
     setNombre(tempNombre)
     setEditando(false)
   }
-
   return (
     <div className="page-container">
-      <h2 className="page-title">👤 Mi Perfil</h2>
+      <h2 className="page-title"> Mi Perfil</h2>
 
       <div className="usuario-card">
         <div className="usuario-avatar">
@@ -40,7 +36,7 @@ function Usuario() {
               onChange={(e) => setTempNombre(e.target.value)}
             />
             <button className="fav-btn fav-activo" onClick={guardar}>
-              ✅ Guardar
+               Guardar
             </button>
             <button className="back-btn" onClick={() => setEditando(false)}>
               Cancelar
@@ -52,7 +48,7 @@ function Usuario() {
               {nombre || 'Sin nombre'}
             </h3>
             <button className="fav-btn" onClick={() => setEditando(true)}>
-              ✏️ Editar nombre
+               Editar nombre
             </button>
           </>
         )}
@@ -73,7 +69,7 @@ function Usuario() {
         </div>
 
         <div className="info-section" style={{ marginTop: '1.5rem' }}>
-          <h3>📱 Sobre la app</h3>
+          <h3> Sobre la app</h3>
           <p>Versión 1.0.0</p>
           <p>Tecnología: React Native + TypeScript</p>
           <p>API: Gutendex (Project Gutenberg)</p>

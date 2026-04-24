@@ -51,7 +51,7 @@ function Favoritos() {
 
   return (
     <div className="page-container">
-      <h2 className="page-title">❤️ Mis Favoritos</h2>
+      <h2 className="page-title"> Mis Favoritos</h2>
 
       {loading ? (
         <p className="loading-text">Cargando...</p>
@@ -75,7 +75,7 @@ function Favoritos() {
                   <p className="book-author">
                     {book.authors.map((a) => a.name).join(', ') || 'Autor desconocido'}
                   </p>
-                  <p className="book-downloads">⬇️ {book.download_count.toLocaleString()}</p>
+                  <p className="book-downloads"> {book.download_count.toLocaleString()}</p>
                 </div>
               </Link>
               <button
