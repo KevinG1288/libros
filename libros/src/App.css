@@ -101,14 +101,7 @@ body {
 }
 .search-input:focus { border-color: #888; }
 
-/* FILTROS */
-.filtros {
-  display: flex;
-  gap: 6px;
-  overflow-x: auto;
-  padding-bottom: 10px;
-  scrollbar-width: none;
-}
+
 .filtros::-webkit-scrollbar { display: none; }
 .filtros button {
   flex-shrink: 0;
